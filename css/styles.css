@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Dots', cursive;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.101);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#btnBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    z-index: 7;
+}
+
+.control-unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-movement {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.511);
+    border: #cc7b3d;
+    width: 50px;
+    height: 50px;
+    margin: 0 3vw;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 30px;
+}
+
+.title-container {
+    background-color: rgba(255, 255, 255, 0.774);
+    height: 100px;
+    box-shadow: 0px 6px 19px 5px #00000052;
+}
+
+.page-title {
+    width: 20%;
+    min-width: 210px;
+}
+
+.main-content-container {
+    position: relative;
+    margin: 50px 0;
+}
+
+.controlss-container {
+    font-size: 24px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: -1px 2px 20px 8px rgba(255, 243, 243, 0.205);
+}
+
+canvas {
+    width: 1010px;
+    height: 616px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.d-none {
+    display: none;
+}
+
+.show {
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 0;
+    transition: 500ms;
+}
+
+.opacity-reverse {
+    opacity: 0.9;
+    transition: 500ms;
+}
+
+.move-down {
+    background-color: blueviolet;
+    transform: translateY(-20);
+}
+
+#startscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/9.Intro _ Outro Image/Start Screen/Opción 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    background-position: center;
+    border-radius: 5px;
+}
+
+#helpscreen {
+    position: absolute;
+    background-color: #ffffffb3;
+    background-size: contain;
+    flex-direction: column;
+    min-width: 50%;
+    z-index: 9;
+    border-radius: 5px;
+    pad: 20px;
+}
+
+#btnBox {
+    display: flex;
+    z-index: 5;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#helpscreen img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+#endscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+    background-image: url('../img/9.Intro _ Outro Image/_Game over_ screen/3.Game over.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    z-index: 100;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#win {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+    background-image: url('../img/9.Intro _ Outro Image/_Game over_ screen/1.you lost.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    z-index: 100;
+}
+
+.btn {
+    position: absolute;
+    transform: translateX(-50%);
+    box-shadow: 3px 1px 16px -1px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border: 1px solid #ffaa22;
+    cursor: pointer;
+    color: #cc7b3d;
+    font-family: 'Zen Dots', cursive;
+    font-weight: bold;
+    border-radius: 50px;
+    text-shadow: 0px 0px 12px #ffee66;
+    z-index: 10;
+}
+
+.fullview,
+.sound,
+.instruction {
+    font-size: 22px;
+    padding: 3px 30px;
+    top: 1px;
+}
+
+#start-btn,
+#reset-btn {
+    top: 85%;
+    left: 50%;
+    padding: 4px 20px;
+    font-size: 20px;
+    z-index: 20;
+}
+
+.fullview {
+    right: 22%;
+}
+
+.sound {
+    right: 12%;
+}
+
+.instruction {
+    right: 3%;
+}
+
+.option-button {
+    position: absolute;
+    top: 34px;
+    background-color: rgba(0, 0, 0, 0.399);
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    object-fit: contain;
+    width: 22px;
+    z-index: 10;
+}
+
+#start-btn:hover,
+#reset-btn:hover,
+#fullscreen-btn:hover,
+#sound-btn:hover,
+#instructions-btn:hover {
+    background: linear-gradient(to right, #d89e405b 5%, #d7da3d70 100%);
+    background-color: #ffab23;
+    transition: all 725ms;
+}
+
+#start-btn:active,
+#reset-btn:active {
+    top: 88.2%;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    canvas {
+        height: 100vh;
+        width: 100vw !important;
+    }
+    /* #startscreen {
+    margin: 0;
+  } */
+    #endscreen {
+        margin: 0;
+    }
+}
